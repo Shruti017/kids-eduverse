@@ -1,0 +1,10 @@
+# Local secrets and user data
+**/.env
+**/.env.*
+!**/.env.example
+**/data/users.json
+
+# Installed dependencies and editor state
+**/node_modules/
+.vscode/
+.DS_Store
