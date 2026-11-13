@@ -4,24 +4,24 @@ Express and MongoDB API for parent accounts, child profiles, learning progress, 
 
 ## Local development
 
-1. Install Node.js 18 or newer.
+1. Install Node.js 20 or newer.
 2. Run `npm install` in this folder.
-3. Copy `.env.example` to `.env` and set `MONGODB_URI`, a random `JWT_SECRET` of at least 32 characters, and `CLIENT_ORIGIN` to the local Live Server origins.
+3. Copy `.env.example` to `.env` and set `MONGODB_URI`, a random `JWT_SECRET` of at least 32 characters, and `CLIENT_ORIGIN` to your local Live Server origin.
 4. Run `npm run dev`.
-5. Visit `http://localhost:5000/health` to check the API. The website is served at `http://localhost:5000/` if you want to test the combined deployment layout.
+5. Open `http://localhost:5000/health` to check the backend. Local static hosting through this server is available at `http://localhost:5000/`.
 
-## Deployment
+## Vercel
 
-Deploy the repository root as one Node service so the backend can serve `KIDS-EDUVERSE-Final` on the same HTTPS origin as the API.
+Vercel uses the repository-root `server.js` as its Express entrypoint. The root build script copies the frontend source into `public/`; Vercel serves `public/` from its static CDN and routes API requests to Express.
 
-- Build/install command: `npm install --prefix KIDS-EDUVERSE-Backend`
-- Start command: `npm start --prefix KIDS-EDUVERSE-Backend`
-- Configure host environment variables: `MONGODB_URI`, `JWT_SECRET`, `CLIENT_ORIGIN`, and `NODE_ENV=production`. The hosting service should provide `PORT`.
-- Set `CLIENT_ORIGIN` to the deployed HTTPS site origin. Never upload `.env`; enter values in the hosting service's secret/environment settings.
-- Configure Atlas network access for the backend host's outbound IP addresses.
-- Use HTTPS and review privacy, consent, and data-retention requirements before a public launch for children.
+Configure the repository root as the Vercel project root, use `npm run build` as the build command, and keep the default Express framework detection. Add these environment variables in Vercel:
 
-The frontend defaults to the same-origin `/api` route outside localhost. `window.EDUVERSE_API_BASE` can override this when needed. Local development on localhost or 127.0.0.1 continues to use `http://localhost:5000/api`.
+- `MONGODB_URI`: MongoDB Atlas application connection string.
+- `JWT_SECRET`: a unique production random secret at least 32 characters long.
+- `CLIENT_ORIGIN`: the deployed Vercel site origin, for example `https://your-project.vercel.app`.
+- `NODE_ENV`: `production`.
+
+Configure Atlas Network Access for the Vercel backend's outbound connections. Do not upload `.env` or put secrets in frontend files. Use HTTPS.
 
 ## API routes
 

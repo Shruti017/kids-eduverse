@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIDS EDUVERSE — A Playful Learning World</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@700;800&family=Noto+Sans+Bengali:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="errBanner"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></g></symbol>
+<symbol id="i-vol" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5H4z"/><path d="M16.5 9a4.5 4.5 0 0 1 0 6M19 6.5a8 8 0 0 1 0 11"/></g></symbol>
+<symbol id="i-mute" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M4 9.5v5h3.5L13 19V5L7.5 9.5H4z"/><path d="M16.5 9.5 21 14M21 9.5 16.5 14"/></g></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" d="m12 3 2.7 5.8 6.3.7-4.7 4.2 1.3 6.2L12 16.8 6.4 19.9l1.3-6.2L3 9.5l6.3-.7z"/></symbol>
+<symbol id="i-flame" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.9 3.7 5.5 5.5 5.5 10a5.5 5.5 0 0 1-11 0C6.5 9.5 10 8.5 12 3z"/><path d="M12 20.5a2.6 2.6 0 0 1-2.6-2.6c0-1.5 1.3-2.3 2.6-4 1.3 1.7 2.6 2.5 2.6 4A2.6 2.6 0 0 1 12 20.5z"/></g></symbol>
+<symbol id="i-back" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></g></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" d="M7.5 5v14l11.5-7z"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" d="M8 5.5v13M16 5.5v13"/></symbol>
+<symbol id="i-reset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 5v5.5H9"/><path d="M4.6 14.5a8 8 0 1 0 1.2-7.7L3.5 10.5"/></g></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5.5a4 4 0 0 1-8 0z"/><path d="M8 5.5H5a3 3 0 0 0 3.2 3.6M16 5.5h3a3 3 0 0 1-3.2 3.6"/><path d="M12 13.5v3.5M8.5 21h7M9.5 17h5"/></g></symbol>
+<symbol id="i-pencil" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 20 1.2-4.3L16.6 4.3a2.1 2.1 0 0 1 3 3L8.3 18.7 4 20z"/><path d="m14.5 6.5 3 3"/></g></symbol>
+<symbol id="i-palette" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3a9 9 0 1 0 .2 18c1.6 0 2-1.1 1.4-2.1-.8-1.4.2-3.1 1.9-3.1h1.6A4.1 4.1 0 0 0 21 11.7C20.8 6.8 16.8 3 12 3z"/><circle cx="8" cy="9" r="1.1"/><circle cx="13" cy="7" r="1.1"/><circle cx="7" cy="14" r="1.1"/></g></symbol>
+<symbol id="i-paw" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="6.5" cy="8.5" r="1.7"/><circle cx="12" cy="6.8" r="1.7"/><circle cx="17.5" cy="8.5" r="1.7"/><path d="M12 11.5c-3 0-5.4 2.3-5.4 4.7 0 1.6 1.2 2.8 2.8 2.8 1 0 1.7-.5 2.6-.5s1.6.5 2.6.5c1.6 0 2.8-1.2 2.8-2.8 0-2.4-2.4-4.7-5.4-4.7z"/></g></symbol>
+<symbol id="i-puzzle" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M5 9h4.2a2.8 2.8 0 1 1 5.6 0H19v4.2a2.8 2.8 0 1 0 0 5.6V21H5z"/></symbol>
+<symbol id="i-note" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 17.5V5.5l9-2v11"/><circle cx="7" cy="17.5" r="2.6"/><circle cx="16" cy="14.5" r="2.6"/></g></symbol>
+<symbol id="i-quest" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8.6 9a3.5 3.5 0 1 1 5.2 3.1c-1.2.8-1.8 1.5-1.8 2.9"/><circle cx="12" cy="19" r=".9" fill="currentColor" stroke="none"/></g></symbol>
+<symbol id="i-abc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 17 11 6l4.5 11M8.1 13.2h5.8"/><path d="M17.5 15.5a2 2 0 1 0 2 2v-4.3"/></g></symbol>
+<symbol id="i-hash" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" d="m9.5 4.5-2 15M16.5 4.5l-2 15M5 9.5h15M4 14.5h15"/></symbol>
+<symbol id="i-crown" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 17.5-1.4-9 5.1 3.6L12 5l3.8 7.1 5.1-3.6-1.4 9z"/><path d="M5.5 20.5h13"/></g></symbol>
+<symbol id="i-cards" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="3.5" width="12" height="12" rx="2.5"/><rect x="4" y="8.5" width="12" height="12" rx="2.5"/></g></symbol>
+<symbol id="i-sparkle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 13.8 9l5.7 2-5.7 2L12 18.5 10.2 13 4.5 11l5.7-2z"/><path d="M19 16.5v4M17 18.5h4"/></g></symbol>
+<symbol id="i-shapes" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"><rect x="3.5" y="12.5" width="8" height="8" rx="1.6"/><path d="M16.5 4 21 11.5h-9z"/><circle cx="17" cy="17" r="3.4"/></g></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M5.5 19.5c1-3.4 3.4-5 6.5-5s5.5 1.6 6.5 5"/></g></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></symbol>
+<symbol id="i-lamb" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.8 9.5a3 3 0 0 1 1.4-5.2 3.9 3.9 0 0 1 7.6 0 3 3 0 0 1 1.4 5.2"/><rect x="6.5" y="9.5" width="11" height="9" rx="4.5"/><circle cx="10.4" cy="13.8" r="1" fill="currentColor" stroke="none"/><circle cx="13.6" cy="13.8" r="1" fill="currentColor" stroke="none"/><path d="M10.8 16.6h2.4M9.5 18.5v2.2M14.5 18.5v2.2"/></g></symbol>
+<symbol id="i-boat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 15.5h17L18 20H6z"/><path d="M12 15V4.5"/><path d="M12 6c3.6 1.4 5.6 4 6 7.5H12z"/><path d="M2.5 22c1.6 0 1.6-1.3 3.2-1.3S7.3 22 8.9 22s1.6-1.3 3.1-1.3 1.6 1.3 3.2 1.3 1.6-1.3 3.2-1.3 1.6 1.3 3.1 1.3"/></g></symbol>
+<symbol id="i-bridge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 18.5V12M21.5 18.5V12"/><path d="M2.5 12a9.5 9.5 0 0 1 19 0"/><path d="M2.5 12h19"/><path d="M6.5 18.5v-3.5M12 18.5v-3.5M17.5 18.5v-3.5"/><path d="M2.5 18.5h19"/></g></symbol>
+<symbol id="i-umbrella" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5a9.5 9.5 0 0 1 9.5 9.5h-19A9.5 9.5 0 0 1 12 2.5z"/><path d="M12 12v6.5a2 2 0 0 1-4 0"/><path d="M12 2.5V1.5"/></g></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.9A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.24"/><path d="M16 14v6M8 14v6M12 16v6"/></g></symbol>
+<symbol id="i-mango" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 8.5c4.6-.6 8.5 2 8.5 6.2 0 4-3.2 6.8-7.6 6.8-4.2 0-7.4-2.6-7.4-6.3 0-3.9 2.6-6.2 6.5-6.7z"/><path d="M13.5 7.5c-.2-2 .8-3.6 2.8-4.5"/><path d="M16.3 3c1.9-.3 3.3.4 4.2 1.8-1.8 1.1-3.5.7-4.2-1.8z"/></g></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 19.5C5.5 11 11 5 20 4.5c.4 9-4.6 15-13 15z"/><path d="M5.5 19.5C8 14 12 10 17 7.5"/></g></symbol>
+<symbol id="owl" viewBox="0 0 64 64"><g stroke="#3A2E39" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20 13 7l12 6z" fill="#C68B59"/><path d="M47 20 51 7 39 13z" fill="#C68B59"/><ellipse cx="32" cy="36" rx="21" ry="24" fill="#C68B59"/><ellipse cx="32" cy="42" rx="13" ry="15" fill="#F3D9B8" stroke="none"/><circle cx="24" cy="28" r="8.5" fill="#fff"/><circle cx="40" cy="28" r="8.5" fill="#fff"/><circle cx="24" cy="29" r="3.4" fill="#3A2E39" stroke="none"/><circle cx="40" cy="29" r="3.4" fill="#3A2E39" stroke="none"/><path d="M32 33.5 28.5 38h7z" fill="#FF9F1C"/><path d="M22 47q3.5 3 7 0M35 47q3.5 3 7 0" fill="none" stroke-width="2.4"/></g></symbol>
+</defs></svg>
+
+<div class="splash" id="splash">
+ <div style="padding:20px;max-width:560px">
+  <div class="logoTiles"><b style="background:var(--zl)">K</b><b style="background:var(--zn)">I</b><b style="background:var(--zp)">D</b><b style="background:var(--za)">S</b></div>
+  <span class="kidsTag">EDUVERSE</span>
+  <div style="width:120px;height:120px;margin:10px auto;color:#C68B59"><svg viewBox="0 0 64 64" style="width:100%;height:100%"><use href="#owl"/></svg></div>
+  <p style="font-weight:800;font-size:17px;margin:6px 0 18px;color:#2C5D57">Hi! I am Ollie. A whole world of letters, numbers,<br>colors, shapes, animals and rhymes is waiting for you!</p>
+  <button class="btn" id="btnStart" style="background:var(--za);color:#fff;font-size:22px;padding:14px 34px"><svg width="20" height="20"><use href="#i-sparkle"/></svg> Let us Explore!</button>
+ </div>
+</div>
+
+<header id="hud">
+ <div><button class="chip" id="btnHome" aria-label="Map"><svg width="19" height="19"><use href="#i-home"/></svg></button><span class="logo">KIDS&nbsp;EDU<b>VERSE</b></span></div>
+ <div>
+  <button class="chip" id="btnAuth" aria-label="Log in or sign up"></button>
+  <span class="chip"><svg width="18" height="18" style="color:var(--zl)"><use href="#i-flame"/></svg><b id="hudStreak">1</b></span>
+  <span class="chip"><svg width="18" height="18" style="color:var(--zw)"><use href="#i-star"/></svg><b id="hudXP">0</b></span>
+  <span class="chip" id="hudLvl">Lv 1</span>
+  <button class="chip" id="btnSound" aria-label="Sound"><svg width="18" height="18" id="sndIcWrap"><use href="#i-vol"/></svg></button>
+ </div>
+</header>
+
+<main id="world">
+<div class="titleSky">
+ <div style="text-align:center">
+  <div class="logoFloat" aria-label="KIDS">
+   <b style="background:var(--zl)">K</b><b style="background:var(--zn)">I</b><b style="background:var(--zp)">D</b><b style="background:var(--za)">S</b>
+  </div>
+  <div class="logoFloat" aria-label="EDUVERSE" style="margin-top:6px">
+   <b style="background:var(--zc)">E</b><b style="background:var(--zr)">D</b><b style="background:var(--zq)">U</b><b style="background:var(--zw)">V</b><b style="background:var(--zl)">E</b><b style="background:var(--zn)">R</b><b style="background:var(--zp)">S</b><b style="background:var(--za)">E</b>
+  </div>
+  <div><span class="kidsTag2">A PLAYFUL LEARNING WORLD</span></div>
+ </div>
+</div>
+<div class="map-wrap">
+<svg class="map-svg" viewBox="0 0 1000 1660" role="img" aria-label="Kids Eduverse map with nine learning lands">
+ <rect width="1000" height="940" fill="#C7EAE4"/><rect y="900" width="1000" height="760" fill="#CFE8B8"/>
+ <path d="M0 860 Q170 790 340 850 T680 838 T1000 848 V960 H0 Z" fill="#B5DFA5"/>
+ <path d="M0 1330 Q250 1280 500 1320 T1000 1310 V1470 H0 Z" fill="#C2E2A8"/>
+ <ellipse cx="500" cy="1445" rx="330" ry="120" fill="#EBD98F"/>
+ <ellipse cx="170" cy="1540" rx="180" ry="60" fill="#F4E0AE" stroke="#E3C98F" stroke-width="4"/><ellipse cx="110" cy="1545" rx="95" ry="34" fill="#A9DFEA"/>
+ <path d="M500 190 C430 240 350 250 310 305 C270 365 560 375 680 445 C790 510 430 510 320 585 C215 655 560 665 680 725 C790 785 430 795 320 865 C215 925 560 935 680 1005 C790 1065 430 1075 320 1145 C215 1205 560 1215 680 1285 C790 1340 620 1365 500 1440" fill="none" stroke="#D9C79A" stroke-width="30" stroke-linecap="round"/>
+ <path d="M500 190 C430 240 350 250 310 305 C270 365 560 375 680 445 C790 510 430 510 320 585 C215 655 560 665 680 725 C790 785 430 795 320 865 C215 925 560 935 680 1005 C790 1065 430 1075 320 1145 C215 1205 560 1215 680 1285 C790 1340 620 1365 500 1440" fill="none" stroke="#FDF3DC" stroke-width="17" stroke-linecap="round" stroke-dasharray="1 32"/>
+ <g id="sunG" style="cursor:pointer"><g class="tw2" stroke="#FFC93C" stroke-width="9" stroke-linecap="round"><path d="M120 34v-22M120 186v22M44 110H22M196 110h22M67 57 52 42M173 57l15-15M67 163l-15 15M173 163l15 15"/></g><circle cx="120" cy="110" r="42" fill="#FFD24C" stroke="#3A2E39" stroke-width="4"/><circle cx="107" cy="103" r="4" fill="#3A2E39"/><circle cx="133" cy="103" r="4" fill="#3A2E39"/><path d="M106 120c8 8 20 8 28 0" fill="none" stroke="#3A2E39" stroke-width="4" stroke-linecap="round"/></g>
+ <g class="driftA"><g fill="#fff" stroke="#3A2E39" stroke-width="3.5"><ellipse cx="330" cy="120" rx="52" ry="22"/><ellipse cx="306" cy="108" rx="26" ry="18"/><ellipse cx="346" cy="104" rx="30" ry="20"/></g></g>
+ <g class="driftA d2"><g fill="#fff" stroke="#3A2E39" stroke-width="3.5"><ellipse cx="760" cy="185" rx="44" ry="19"/><ellipse cx="740" cy="175" rx="22" ry="15"/></g></g>
+ <g class="driftA d3"><g fill="#fff" stroke="#3A2E39" stroke-width="3.5" transform="scale(.7)"><ellipse cx="180" cy="420" rx="52" ry="22"/><ellipse cx="158" cy="408" rx="24" ry="16"/></g></g>
+ <g class="driftA d4"><g fill="#fff" stroke="#3A2E39" stroke-width="3.5" transform="scale(.62)"><ellipse cx="1250" cy="620" rx="52" ry="22"/><ellipse cx="1272" cy="608" rx="24" ry="16"/></g></g>
+ <g class="bobber" stroke="#3A2E39" stroke-width="4" fill="none" stroke-linecap="round" transform="translate(250,120)"><path d="M0 0q8-9 16 0q8-9 16 0"/><path d="M48 18q7-8 14 0q7-8 14 0" transform="scale(.8)"/></g>
+ <g class="bobber b2" stroke="#3A2E39" stroke-width="4" fill="none" stroke-linecap="round" transform="translate(790,300) scale(.8)"><path d="M0 0q8-9 16 0q8-9 16 0"/></g>
+ <g class="bobber b3" stroke="#3A2E39" stroke-width="4" fill="none" stroke-linecap="round" transform="translate(120,700) scale(.7)"><path d="M0 0q8-9 16 0q8-9 16 0"/></g>
+ <g id="balloonG" transform="translate(880,240)" style="cursor:pointer"><g class="fluffy"><path d="M0 -46c26 0 42 18 42 40 0 26-26 46-42 60-16-14-42-34-42-60 0-22 16-40 42-40z" fill="#FF6B57" stroke="#3A2E39" stroke-width="4"/><path d="M-14 -44c-8 12-12 26-12 40 0 14 6 30 14 44M14 -44c8 12 12 26 12 40 0 14-6 30-14 44" fill="none" stroke="#FFC93C" stroke-width="7"/><path d="M-10 54h20l-3 8h-14z" fill="#A9713B" stroke="#3A2E39" stroke-width="3.5"/></g></g>
+ <g transform="translate(500,132)"><rect x="-128" y="-24" width="256" height="48" rx="24" fill="#FFF1D6" stroke="#3A2E39" stroke-width="3.5"/><text x="0" y="9" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="700" font-size="20" fill="#3A2E39">Tap a place to explore!</text></g>
+ <g id="ollieG" transform="translate(408,198)" style="cursor:pointer"><g class="fluffy f2"><svg viewBox="0 0 64 64" x="-24" y="-28" width="48" height="48"><use href="#owl"/></svg></g></g>
+ <g id="mapFlowers"></g>
+
+ <g transform="translate(300,310)"><g class="loc" data-zone="letters">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round"><rect x="-72" y="22" width="56" height="56" rx="9" fill="#FF8A7A"/><rect x="-6" y="22" width="56" height="56" rx="9" fill="#FFB199"/><rect x="-39" y="-40" width="56" height="56" rx="9" fill="#FFC93C"/><text x="-44" y="62" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="800" font-size="34" fill="#fff" stroke="none">A</text><text x="22" y="62" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="800" font-size="34" fill="#fff" stroke="none">B</text><text x="-11" y="0" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="800" font-size="34" fill="#3A2E39" stroke="none">C</text><g transform="translate(78,-6) rotate(24)"><rect x="-8" y="-34" width="16" height="58" rx="3" fill="#FFC93C"/><path d="M-8 24 0 40 8 24z" fill="#F3D9B8"/><rect x="-8" y="-42" width="16" height="9" rx="3" fill="#F7A1C4"/></g></g>
+  <g transform="translate(0,124)"><rect x="-92" y="-24" width="184" height="48" rx="24" fill="#FF6B57" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Letter Land</text><g class="vcheck" transform="translate(78,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+ <g transform="translate(690,450)"><g class="loc" data-zone="numbers">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round"><ellipse cx="-62" cy="58" rx="56" ry="22" fill="#8FCF7C"/><ellipse cx="8" cy="66" rx="60" ry="24" fill="#7CC46A"/><ellipse cx="74" cy="56" rx="50" ry="20" fill="#8FCF7C"/><text x="-62" y="46" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="800" font-size="42" fill="#fff" stroke="#3A2E39" stroke-width="1.4" paint-order="stroke">1</text><text x="8" y="56" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="800" font-size="42" fill="#fff" stroke="#3A2E39" stroke-width="1.4" paint-order="stroke">2</text><text x="74" y="44" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="800" font-size="42" fill="#fff" stroke="#3A2E39" stroke-width="1.4" paint-order="stroke">3</text><g transform="translate(-18,-26)"><rect x="-30" y="-20" width="60" height="44" rx="7" fill="#F3D9B8"/><path d="M-22 -6h44M-22 10h44" stroke-width="2.6"/><circle cx="-12" cy="-6" r="6" fill="#FF6B57"/><circle cx="0" cy="-6" r="6" fill="#FF6B57"/><circle cx="12" cy="-6" r="6" fill="#FF6B57"/><circle cx="-8" cy="10" r="6" fill="#2EC4B6"/><circle cx="4" cy="10" r="6" fill="#2EC4B6"/></g></g>
+  <g transform="translate(0,124)"><rect x="-105" y="-24" width="210" height="48" rx="24" fill="#1FA9A0" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Number Valley</text><g class="vcheck" transform="translate(91,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+ <g transform="translate(300,590)"><g class="loc" data-zone="colors">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M-44 84 -22 -14M44 84 22 -14M0 84 0 -6" fill="none"/><rect x="-46" y="-64" width="92" height="70" rx="6" fill="#fff"/><circle cx="-20" cy="-42" r="10" fill="#FF6B57"/><circle cx="8" cy="-34" r="8" fill="#2EC4B6"/><circle cx="26" cy="-48" r="7" fill="#FFC93C"/><path d="M-34 -18c14-8 42-8 58 2" fill="none" stroke="#F15BB5" stroke-width="7"/><g transform="translate(78,44)"><ellipse rx="30" ry="21" fill="#E0A458"/><circle cx="-14" cy="-6" r="4.6" fill="#FF6B57" stroke-width="2.6"/><circle cx="-1" cy="-10" r="4.6" fill="#FFC93C" stroke-width="2.6"/><circle cx="12" cy="-3" r="4.6" fill="#2EC4B6" stroke-width="2.6"/><circle cx="-11" cy="7" r="4.6" fill="#F15BB5" stroke-width="2.6"/></g></g>
+  <g transform="translate(0,124)"><rect x="-100" y="-24" width="200" height="48" rx="24" fill="#F15BB5" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="25">Color Studio</text><g class="vcheck" transform="translate(86,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+ <g transform="translate(690,730)"><g class="loc" data-zone="shapes">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><rect x="-66" y="16" width="48" height="48" rx="7" fill="#FF6B57"/><circle cx="8" cy="40" r="24" fill="#FFC93C"/><path d="M40 64 62 22 84 64Z" fill="#2EC4B6"/><path transform="translate(50,-30) scale(.75)" d="M0 -22l4 8 9 1-6.5 6 1.6 9L0 -2.5l-8.1 4.5 1.6-9-6.5-6 9-1z" fill="#F15BB5" stroke-width="3.5"/></g>
+  <g transform="translate(0,124)"><rect x="-104" y="-24" width="208" height="48" rx="24" fill="#3FA7D6" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Shape Safari</text><g class="vcheck" transform="translate(90,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+  <g transform="translate(84,-58)"><g class="floatBadge" style="animation-delay:-1.1s"><circle r="25" fill="#fff" stroke="#3A2E39" stroke-width="3.5"/><svg x="-13" y="-13" width="26" height="26" style="color:#3FA7D6"><use href="#i-shapes"/></svg></g></g>
+ </g></g>
+ <g transform="translate(300,870)"><g class="loc" data-zone="animals">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M-72 80V44" stroke="#A9713B" stroke-width="11"/><circle cx="-72" cy="22" r="27" fill="#58B368"/><circle cx="-92" cy="38" r="19" fill="#6FC27C"/><circle cx="-52" cy="38" r="19" fill="#6FC27C"/><ellipse cx="34" cy="72" rx="42" ry="18" fill="#4E9E44"/><g transform="translate(6,44)"><circle r="19" fill="#E8863A"/><circle r="13.5" fill="#FFC069"/><circle cx="-4.5" cy="-2" r="1.9" fill="#3A2E39" stroke="none"/><circle cx="4.5" cy="-2" r="1.9" fill="#3A2E39" stroke="none"/></g><g transform="translate(-14,74)"><rect x="-5" y="-6" width="10" height="12" rx="3" fill="#F3D9B8" stroke-width="3"/><path d="M-14-4a14 10 0 0 1 28 0z" fill="#FF6B57"/></g></g>
+  <g transform="translate(0,124)"><rect x="-100" y="-24" width="200" height="48" rx="24" fill="#58B368" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Animal Forest</text><g class="vcheck" transform="translate(86,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+ <g transform="translate(690,1010)"><g class="loc" data-zone="puzzle">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M-20 62c-4-34 2-52 14-64" fill="none" stroke="#A9713B" stroke-width="9"/><path d="M-6-2c-16-10-32-8-42 2 14 2 28 4 42-2zM-6-2c2-16 14-26 28-26-4 12-12 22-28 26zM-6-2c16-6 30-2 38 8-12 4-26 2-38-8zM-6-2c-4 14-14 22-28 24 4-12 14-20 28-24z" fill="#58B368" stroke-width="3"/><circle cx="-12" cy="4" r="4.5" fill="#A9713B" stroke-width="3"/><circle cx="-2" cy="8" r="4.5" fill="#A9713B" stroke-width="3"/><g transform="translate(34,34)"><rect x="-20" y="-16" width="40" height="40" rx="7" fill="#FF9F1C"/><circle cy="-16" r="9" fill="#FF9F1C"/><circle cx="-20" cy="4" r="8" fill="#CFE8B8" stroke="none"/><circle cx="20" cy="4" r="8" fill="#CFE8B8" stroke="none"/></g></g>
+  <g transform="translate(0,124)"><rect x="-98" y="-24" width="196" height="48" rx="24" fill="#FF9F1C" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Puzzle Island</text><g class="vcheck" transform="translate(84,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+ <g transform="translate(300,1150)"><g class="loc" data-zone="rhymes">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><rect x="-56" y="-12" width="112" height="84" rx="9" fill="#F2B8D6"/><path d="M-70 -12 0 -68 70 -12z" fill="#8656C1"/><rect x="26" y="-52" width="13" height="24" rx="3" fill="#C68B59"/><path d="M-14 72V38a14 14 0 0 1 28 0v34z" fill="#8656C1"/><circle cx="-30" cy="18" r="12" fill="#fff"/><path d="M-30 10v16M-38 18h16" stroke-width="2.8"/><path d="M52-84 62-86v9" fill="none" stroke="#8656C1" stroke-width="3"/><circle cx="50" cy="-84" r="4" fill="#8656C1" stroke="none"/><circle cx="60" cy="-77" r="4" fill="#8656C1" stroke="none"/></g>
+  <g transform="translate(0,124)"><rect x="-92" y="-24" width="184" height="48" rx="24" fill="#8656C1" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Rhyme Room</text><g class="vcheck" transform="translate(78,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+ <g transform="translate(690,1290)"><g class="loc" data-zone="quiz">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><rect x="-58" y="-16" width="116" height="82" rx="7" fill="#E3D7C4"/><rect x="-84" y="-42" width="30" height="108" rx="6" fill="#D6C7B0"/><rect x="54" y="-42" width="30" height="108" rx="6" fill="#D6C7B0"/><path d="M-84 -70h99zM50 -42 15 -70h50z" fill="#5C4DDB"/><path d="M-14 66V36a14 14 0 0 1 28 0v30z" fill="#3A2E39"/><circle cy="-2" r="15" fill="#fff"/><text y="7" text-anchor="middle" font-family="Baloo 2, cursive" font-weight="800" font-size="26" fill="#5C4DDB" stroke="none">?</text><path d="M-69 -82h18l-5 6 5 6h-18zM65 -82h18l-5 6 5 6h-18z" fill="#FFC93C" stroke-width="3"/></g>
+  <g transform="translate(0,124)"><rect x="-96" y="-24" width="192" height="48" rx="24" fill="#5C4DDB" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Quiz Castle</text><g class="vcheck" transform="translate(82,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+ <g transform="translate(500,1445)"><g class="loc" data-zone="rewards">
+  <ellipse cx="0" cy="92" rx="112" ry="16" fill="rgba(58,46,57,.09)"/>
+  <g stroke="#3A2E39" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"><path d="M-34 -30h68v14a34 26 0 0 1-68 0z" fill="#FFC93C"/><path d="M-34 -26c-12 2-16 16-4 22M34 -26c12 2 16 16 4 22" fill="none"/><rect x="-9" y="8" width="18" height="14" fill="#E8A200"/><rect x="-24" y="22" width="48" height="12" rx="4" fill="#FFC93C"/><path d="M0 -22l4 8 9 1-6.5 6 1.6 9L0 -2.5l-8.1 4.5 1.6-9-6.5-6 9-1z" fill="#fff" stroke-width="2.6"/><path d="M-52 -48l2.4 6.6 6.6 2.4-6.6 2.4-2.4 6.6-2.4-6.6-6.6-2.4 6.6-2.4z" fill="#E8A200" stroke="none"/><path d="M56 -40l2 5.4 5.4 2-5.4 2-2 5.4-2-5.4-5.4-2 5.4-2z" fill="#E8A200" stroke="none"/></g>
+  <g transform="translate(0,124)"><rect x="-102" y="-24" width="204" height="48" rx="24" fill="#E8A200" stroke="#3A2E39" stroke-width="3.5"/><text class="signText" x="0" y="9" text-anchor="middle" font-size="26">Reward Castle</text><g class="vcheck" transform="translate(88,-22)"><circle r="13" fill="#58B368" stroke="#3A2E39" stroke-width="3"/><path d="M-5.5 0l4 4 7-8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/></g></g>
+ </g></g>
+</svg>
+</div>
+<footer class="wfooter">
+ <button class="btn small soft" id="btnParents"><svg width="16" height="16"><use href="#i-lock"/></svg> For grown-ups</button>
+ <p>Made with love for young learners · Everything runs and saves right here in your browser.</p>
+</footer>
+</main>
+
+<section class="zone" id="zone" aria-label="Learning zone">
+ <header class="zone-head"><div class="zrow">
+  <button class="btn" id="btnMap" style="background:#fff;color:var(--ink)"><svg width="18" height="18"><use href="#i-back"/></svg> Map</button>
+  <div><h2 id="zoneTitle">Letter Land</h2><p id="zoneTag"></p></div>
+ </div></header>
+ <nav class="tabbar" id="zoneTabs"></nav>
+ <div class="zone-body" id="zoneBody"></div>
+</section>
+
+<div class="modal" id="modalRoot"><div class="modalCard" id="modalCard"></div></div>
+<div id="toastRoot"></div>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

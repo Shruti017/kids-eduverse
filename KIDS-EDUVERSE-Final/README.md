@@ -1,17 +1,23 @@
 ﻿# KIDS EDUVERSE
 
-## Run locally
+## Local development
 
-1. Install Node.js 18 or newer.
+1. Install Node.js 20 or newer.
 2. In `KIDS-EDUVERSE-Backend`, run `npm install`.
-3. Copy `.env.example` to `.env` and set `MONGODB_URI`, `JWT_SECRET`, and `CLIENT_ORIGIN` for your local Live Server origin.
-4. Start the backend with `npm run dev` from the backend folder.
-5. Open `KIDS-EDUVERSE-Final/index.html` with VS Code Live Server.
+3. Copy `KIDS-EDUVERSE-Backend/.env.example` to `.env` in that folder and set `MONGODB_URI`, a random `JWT_SECRET` of at least 32 characters, and `CLIENT_ORIGIN` for your local Live Server origin.
+4. Run `npm run dev` from `KIDS-EDUVERSE-Backend`.
+5. Open `KIDS-EDUVERSE-Final/index.html` with Live Server.
 
-The backend serves the frontend itself in a deployed single-service setup. Locally, Live Server remains supported and the frontend calls `http://localhost:5000/api`.
+## Deploy to Vercel
 
-## Connected features
+The root `server.js` exports the Express app for Vercel. `npm run build` copies the frontend into `public/`, which Vercel serves as static assets. The frontend uses the same-origin `/api` URL on the deployed domain.
 
-Parent signup and login use the backend. The app stores its local progress in the browser and syncs a learning summary and badges to MongoDB while signed in. See `CONNECTED-BACKEND-SETUP.md` for deployment steps and current sync limits.
+Connect this GitHub repository to Vercel with the repository root as the project root. Use the default Express detection and `npm run build` as the build command. Add `MONGODB_URI`, a production-only random `JWT_SECRET`, `CLIENT_ORIGIN` set to your Vercel production origin, and `NODE_ENV=production` in Vercel's environment settings. Configure MongoDB Atlas Network Access for the backend's outbound connections. Keep `.env` and `data/users.json` out of Git.
 
-The Rhyme Room contains 15 sing-along rhymes: 8 English and 7 Bangla.
+After deployment, visit `/` for the website and `/health` for the API health response.
+
+## Features
+
+Parent signup and login use the backend. The app keeps local learning progress in the browser and syncs a summary and badges to MongoDB while signed in. Individual activity events are not yet merged across devices.
+
+The Rhyme Room contains 15 sing-along rhymes: 8 English and 7 Bangla. Before a public launch for children, review applicable parental-consent, privacy, and data-retention requirements.
